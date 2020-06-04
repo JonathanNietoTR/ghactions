@@ -1,0 +1,9 @@
+{
+    "vm-1": "url-vm-1",
+    "vm-2": "url-vm-2",
+    "vm-3": "url-vm-3",
+    "vm-4": "url-vm-4",
+    "vm-5": "url-vm-5",
+    "deployOnPush": false,
+    "array-vm": []
+}

@@ -1,0 +1,9 @@
+name: CI & CD
+on: push
+jobs:
+  get-data-from-settings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Reading & printing file content 
+        run: cat $HOME/.github/workflows/settings.json
