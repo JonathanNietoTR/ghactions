@@ -6,4 +6,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Reading & printing file content 
-        run: cat $HOME/.github/workflows/settings.json
+        run: ls -R $HOME
+        # run: cat $HOME/.github/workflows/settings.json
