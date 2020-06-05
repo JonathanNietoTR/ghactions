@@ -8,7 +8,6 @@ jobs:
       - name: Reading & printing file content 
       - name: Read package.json
         id: package
-        uses: juliangruber/read-file-action@v1
         with:
           path: ./package.json
       - name: Echo package.json
