@@ -4,10 +4,11 @@ jobs:
   get-data-from-settings:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Read package.json
-        id: package
+        id: settings
         uses: juliangruber/read-file-action@v1
         with:
-          path: ./package.json
-      - name: Echo package.json
-        run: echo ${{ steps.package.outputs.content }}
+          path: ./settings.json
+      - name: Echo settings.json
+        run: echo ${{ steps.settings.outputs.content }}
